@@ -1,3 +1,20 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://paweljw.al/"
+languageCode = "en-us"
+title = "Paweł J. Wal"
+theme = "paweljw"
+defaultContentLanguage = "en-us"
+publishDir = "dist/"
+paginate = 10
+canonifyurls = true
+PygmentsCodeFences = true
+pygmentsstyle = "friendly"
+copyright = "This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License."
+assetDir = "/themes/paweljw/assets"
+
+[permalinks]
+  post = "/blog/:year/:month/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  archive = "archives"

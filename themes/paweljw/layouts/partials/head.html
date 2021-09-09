@@ -1,0 +1,10 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{ $styles := resources.Get "style.scss" | resources.ToCSS | resources.Minify | resources.Fingerprint }}
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+
+  {{ $title := print .Site.Title " | " .Title }}
+  {{ if .IsHome }}{{ $title = print "Hi. | " .Site.Title }}{{ end }}
+  <title>{{ $title }}</title>
+</head>
