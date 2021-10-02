@@ -1,0 +1,12 @@
+<div class="hi">
+  <div class="me">
+    <a href="/"><img src="https://avatars.githubusercontent.com/u/770796?v=4" /></a>
+  </div>
+  <hgroup class="speech-bubble">
+    <h1>
+      {{ $title := .Title }}
+      {{ if .IsHome }}{{ $title = "Hi." }}{{ end }}
+      {{ $title }}
+    </h1>
+  </hgroup>
+</div>

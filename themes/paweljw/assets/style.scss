@@ -1,6 +1,6 @@
 body {
   // background: #f3f3f3;
-  background: linear-gradient(#1ec288, #b392e3);
+  background: linear-gradient(#1ec288, #9774cc);
   font-size: 16px;
   font-family: -apple-system,
   BlinkMacSystemFont,
@@ -8,6 +8,7 @@ body {
   "Roboto",
   "Helvetica Neue", Arial, sans-serif,
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  min-height: 100vh;
 }
 div {
   box-sizing: border-box;
@@ -91,7 +92,8 @@ div {
   display: flex;
   font-size: 1.5rem;
   flex-direction: column;
-  padding: 20px 20px 10px 20px;
+  padding: 20px 50px 10px 50px;
+  line-height: 1.7em;
   // border-left: 3px solid #1ec288;
 
   h2 {
@@ -110,6 +112,7 @@ div {
 @media only screen and (max-device-width: 1024px) and (orientation: portrait) {
   .hi {
     width: calc(100% - 10px);
+    overflow: auto;
   }
 
   .me img {
@@ -183,4 +186,59 @@ a.button:hover {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding: 0px;
+  font-size: 1em;
+  opacity: 0.8;
+}
+
+.continue-reading {
+  padding-bottom: 10px;
+  display: inline-block;
+}
+
+.title {
+  line-height: 3em;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+
+
+  h1 {
+    padding: 50px;
+    text-shadow:
+3px 3px 0 #222, -3px -3px 0 #222, 3px -3px 0 #222,
+-3px 3px 0 #222, 0px 0px 0px #222;
+  }
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .metadata {
+    line-height: 1.7em;
+    padding: 0px 10px;
+    background: #000;
+  }
+}
+
+.ktitle {
+  line-height: 1.7em;
+}
+
+.pagination {
+  display: flex;
+  flex-grow: 1;
+  padding: 0;
+  justify-content: center;
+  margin: 0 auto !important;
+
+
+  li {
+    list-style: none;
+    padding: 10px;
+    min-width: 20px;
+    text-align: center;
+  }
 }

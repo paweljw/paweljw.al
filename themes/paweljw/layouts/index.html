@@ -1,13 +1,5 @@
 {{ define "main" }}
-<div class="hi">
-  <div class="me">
-    <img src="https://avatars.githubusercontent.com/u/770796?v=4" />
-  </div>
-  <hgroup class="speech-bubble">
-    <h1>
-      Hi.
-    </h1>
-</div>
+{{ partial "face.html" . }}
 <div class="card">
   <div>
     <p>I'm Paweł. I'm a software engineer hailing from Poland. I've been doing this for a living for over 15 years now.
@@ -64,7 +56,7 @@
   <div>
     <ul>
       {{ range first 3 (where .Site.RegularPages.ByPublishDate.Reverse "Section" "blog") }}
-      <li><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      <li><a class="utitle" href="{{ .RelPermalink }}">{{ .Title }}</a></li>
       {{ end }}
     </ul>
   </div>

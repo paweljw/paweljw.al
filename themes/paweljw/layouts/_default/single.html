@@ -1,6 +1,15 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
+<div class="card title" style="background-image: url('{{ .Params.coverImage }}')">
+  <h1>{{ .Title }}</h1>
 {{ partial "metadata.html" . }}
-<br><br>
-{{ .Content }}
+</div>
+<div class="card">
+  <a href="/blog">&laquo; back to all blogs</a>
+</div>
+<div class="card">
+  {{ .Content }}
+</div>
+<div class="card">
+  <a href="/blog">&laquo; back to all blogs</a>
+</div>
 {{ end }}

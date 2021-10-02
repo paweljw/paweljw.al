@@ -1,12 +1,24 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-{{ range .Pages.ByPublishDate.Reverse }}
-<p>
-<h3><a class="title" href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-{{ partial "metadata.html" . }}
-<a class="summary" href="{{ .RelPermalink }}">
+{{ partial "face.html" . }}
+{{ $paginator := .Paginate (where .Pages.ByPublishDate.Reverse "Type" "blog") }}
+{{ if gt $paginator.TotalPages 1 }}
+  <div class="card">
+  {{ template "_internal/pagination.html" . }}
+  </div>
+{{ end }}
+{{ range $paginator.Pages }}
+<div class="card">
+  <h2><a class="ktitle" href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+  {{ partial "metadata.html" . }}
+  <div>
   <p>{{ .Summary }}</p>
-</a>
-</p>
+  <a class="continue-reading" href="{{ .RelPermalink }}">continue reading &raquo;</a>
+  </div>
+</div>
+{{ end }}
+{{ if gt $paginator.TotalPages 1 }}
+  <div class="card">
+  {{ template "_internal/pagination.html" . }}
+  </div>
 {{ end }}
 {{ end }}
