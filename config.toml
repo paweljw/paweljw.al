@@ -12,7 +12,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
 assetDir = "/themes/paweljw/assets"
 
 [permalinks]
-  post = "/blog/:year/:month/:slug/"
+  blog = "/blog/:year/:month/:slug/"
 
 [taxonomies]
   tag = "tags"
