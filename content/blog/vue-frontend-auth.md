@@ -14,19 +14,19 @@ draft: false
 twitterTitle: "Vue.js front end app: JWT auth"
 ---
 
-In this part we'll allow the user to log in to our frontend app, using the [auth mechanism](/2017/07/rails-5.1-api-app-part-4-authentication-and-authorization/) we've built on the back end earlier. A lot of topics in this one, so jump right in!
+In this part we'll allow the user to log in to our frontend app, using the [auth mechanism](/blog/2017/07/rails-5.1-api-app-part-4-authentication-and-authorization/) we've built on the back end earlier. A lot of topics in this one, so jump right in!
 
 <!--more-->
 
 <details>
   <summary>_This series is composed of multiple articles! Click here for a table of contents._</summary>
 
-  * [Part 1: Setting up the app](/2017/09/vue.js-front-end-app-part-1-setting-up-the-app/)
-  * [Part 2: Design is (not) hard](/2017/09/vue.js-front-end-app-part-2-design-is-not-hard/)
+  * [Part 1: Setting up the app](/blog/2017/09/vue.js-front-end-app-part-1-setting-up-the-app/)
+  * [Part 2: Design is (not) hard](/blog/2017/09/vue.js-front-end-app-part-2-design-is-not-hard/)
   * Part 3: Authentication
-  * [Part 4: Keeping state with Vuex](/2017/10/vue.js-front-end-app-part-4-keeping-state-with-vuex/)
-  * [Part 5: Data presentation](/2018/01/vue.js-front-end-app-part-5-data-presentation/)
-  * [Part 6: Deploying to S3](/2018/04/vue.js-front-end-app-part-6-deploying-to-s3/)
+  * [Part 4: Keeping state with Vuex](/blog/2017/10/vue.js-front-end-app-part-4-keeping-state-with-vuex/)
+  * [Part 5: Data presentation](/blog/2018/01/vue.js-front-end-app-part-5-data-presentation/)
+  * [Part 6: Deploying to S3](/blog/2018/04/vue.js-front-end-app-part-6-deploying-to-s3/)
 </details>
 
 We did a lot of talking in the previous post, a bunch of drawing squares, and almost zero coding. And with good reason, too. But I'm raring to code already, and I guess so are you! No worries: today's post is all code, all the time.
@@ -35,7 +35,7 @@ When we've last parted ways with our app, it looked like this:
 
 {{< figure src="/media/hello.png" link="/media/hello.png" >}}
 
-Well - that's no bookstore, is it. We need to do something about it, and as we've discussed last time the first thing we need is a login screen. 
+Well - that's no bookstore, is it. We need to do something about it, and as we've discussed last time the first thing we need is a login screen.
 
 Usually a log-in screen might be located at `/login`, `/sign-in` or other such URL. But our app cannot be used at all without logging in - that's how we designed the API - so we'll be justified in just putting the log in screen on `/` in this case.
 
@@ -288,7 +288,7 @@ Yay! Now, to actually make it _do_ something.
 
 ## vue-axios
 
-A couple months back when I wrote the original post on [stack choices](/2017/07/rails-5.1-api-with-vue.js-frontend-part-0-stack-choices/) I said that we will use vue-resource. Since then it has come to my attention that the creator of Vue decided to [retire vue-resource](https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4) as far back as November 2016.
+A couple months back when I wrote the original post on [stack choices](/blog/2017/07/rails-5.1-api-with-vue.js-frontend-part-0-stack-choices/) I said that we will use vue-resource. Since then it has come to my attention that the creator of Vue decided to [retire vue-resource](https://medium.com/the-vue-point/retiring-vue-resource-871a82880af4) as far back as November 2016.
 
 Because of that I've decided to replace it with [vue-axios](https://github.com/imcvampire/vue-axios) which provides Vue-style binding to the [axios](https://github.com/axios/axios) library. Let's drop that into our project:
 
@@ -549,7 +549,7 @@ Congratulations to us, we have a huge auth bug! We shouldn't be checking _whethe
 
 It would make a lot of sense if we could store our state somewhere and just look at it every now and again - and change it very rarely. Guess what - that's what we're going to do in the next part, which will focus on storing state with [vuex](https://github.com/vuejs/vuex/).
 
-As always, the code for this part is available on GitHub at [paweljw/bookstore-frontend](https://github.com/paweljw/bookstore-frontend/releases/tag/part-2). See you in [part 4](/2017/10/vue.js-front-end-app-part-4-keeping-state-with-vuex/)!
+As always, the code for this part is available on GitHub at [paweljw/bookstore-frontend](https://github.com/paweljw/bookstore-frontend/releases/tag/part-2). See you in [part 4](/blog/2017/10/vue.js-front-end-app-part-4-keeping-state-with-vuex/)!
 
 ---
 

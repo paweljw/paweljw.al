@@ -14,19 +14,19 @@ draft: false
 twitterTitle: "Vue.js front end app: Vuex"
 ---
 
-Last time we built an [authentication mechanism](/2017/09/vue.js-front-end-app-part-3-authentication/) with a pretty glaring bug - you can just set the `token` in `localStorage` to whatever and it'll let you in. We need to actually read the token, and persist what we've read so we don't have to do it over and over.
+Last time we built an [authentication mechanism](/blog/2017/09/vue.js-front-end-app-part-3-authentication/) with a pretty glaring bug - you can just set the `token` in `localStorage` to whatever and it'll let you in. We need to actually read the token, and persist what we've read so we don't have to do it over and over.
 
 <!--more-->
 
 <details>
   <summary>_This series is composed of multiple articles! Click here for a table of contents._</summary>
 
-  * [Part 1: Setting up the app](/2017/09/vue.js-front-end-app-part-1-setting-up-the-app/)
-  * [Part 2: Design is (not) hard](/2017/09/vue.js-front-end-app-part-2-design-is-not-hard/)
-  * [Part 3: Authentication](/2017/09/vue.js-front-end-app-part-3-authentication/)
+  * [Part 1: Setting up the app](/blog/2017/09/vue.js-front-end-app-part-1-setting-up-the-app/)
+  * [Part 2: Design is (not) hard](/blog/2017/09/vue.js-front-end-app-part-2-design-is-not-hard/)
+  * [Part 3: Authentication](/blog/2017/09/vue.js-front-end-app-part-3-authentication/)
   * Part 4: Keeping state with Vuex
-  * [Part 5: Data presentation](/2018/01/vue.js-front-end-app-part-5-data-presentation/)
-  * [Part 6: Deploying to S3](/2018/04/vue.js-front-end-app-part-6-deploying-to-s3/)
+  * [Part 5: Data presentation](/blog/2018/01/vue.js-front-end-app-part-5-data-presentation/)
+  * [Part 6: Deploying to S3](/blog/2018/04/vue.js-front-end-app-part-6-deploying-to-s3/)
 </details>
 
 ## What is Vuex?
@@ -489,7 +489,7 @@ It's a typical Bootstrap 4.0 navbar, except for two things: we're rendering `cur
 You might notice one more thing: we're using SASS here, because I don't want to recalculate darker colors by hand if the client changes his mind about the navbar. We'll need to add a SASS loader for that in development:
 
 ```
-npm install sass-loader node-sass style-loader --save-dev   
+npm install sass-loader node-sass style-loader --save-dev
 ```
 
 The file `build/webpack.base.conf.js` also requires a slight addition:
@@ -567,7 +567,7 @@ I've mentioned ripgrep in this episode. It's a great tool and I'm getting a ton 
 
 While these "big" articles take a lot of time to make (this one is currently clocking in at almost 10 hours of coding and writing alone), I'll be posting a couple of shorter posts between them about the tools that I just can't live without, so be on the lookout for those as well.
 
-As always, thanks for reading - let me know your thoughts and questions in the comments below! I respond to every single one, even if it takes a little while sometimes. Check out the code for this part on GitHub at [paweljw/bookstore-frontend](https://github.com/paweljw/bookstore-frontend/tree/part-4) and I'll see you in the [next one](/2018/01/vue.js-front-end-app-part-5-data-presentation/)!
+As always, thanks for reading - let me know your thoughts and questions in the comments below! I respond to every single one, even if it takes a little while sometimes. Check out the code for this part on GitHub at [paweljw/bookstore-frontend](https://github.com/paweljw/bookstore-frontend/tree/part-4) and I'll see you in the [next one](/blog/2018/01/vue.js-front-end-app-part-5-data-presentation/)!
 
 ---
 

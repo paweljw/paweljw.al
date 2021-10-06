@@ -21,10 +21,10 @@ New year, new ~~you~~ blog post! In this long overdue part we'll strengthen our 
 <details>
   <summary>_This series is composed of multiple articles! Click here for a table of contents._</summary>
 
-  * [Part 1: Setting up the app](/2017/09/vue.js-front-end-app-part-1-setting-up-the-app/)
-  * [Part 2: Design is (not) hard](/2017/09/vue.js-front-end-app-part-2-design-is-not-hard/)
-  * [Part 3: Authentication](/2017/09/vue.js-front-end-app-part-3-authentication/)
-  * [Part 4: Keeping state with Vuex](/2017/10/vue.js-front-end-app-part-4-keeping-state-with-vuex/)
+  * [Part 1: Setting up the app](/blog/2017/09/vue.js-front-end-app-part-1-setting-up-the-app/)
+  * [Part 2: Design is (not) hard](/blog/2017/09/vue.js-front-end-app-part-2-design-is-not-hard/)
+  * [Part 3: Authentication](/blog/2017/09/vue.js-front-end-app-part-3-authentication/)
+  * [Part 4: Keeping state with Vuex](/blog/2017/10/vue.js-front-end-app-part-4-keeping-state-with-vuex/)
   * Part 5: Data presentation
   * [Part 6: Deploying to S3](/2018/04/vue.js-front-end-app-part-6-deploying-to-s3/)
 </details>
@@ -429,5 +429,5 @@ Happy 2018, and see you in the next one, where we'll finally do some data editin
 
 ---
 
-Top image credit: 
+Top image credit:
 Maurício Mascaro via https://www.pexels.com/photo/person-holding-magnifying-glass-712786/ (CC0)

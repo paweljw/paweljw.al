@@ -22,11 +22,11 @@ In this final episode of the series, we'll take a look at deploying our Single P
 <details>
   <summary>_This series is composed of multiple articles! Click here for a table of contents._</summary>
 
-  * [Part 1: Setting up the app](/2017/09/vue.js-front-end-app-part-1-setting-up-the-app/)
-  * [Part 2: Design is (not) hard](/2017/09/vue.js-front-end-app-part-2-design-is-not-hard/)
-  * [Part 3: Authentication](/2017/09/vue.js-front-end-app-part-3-authentication/)
-  * [Part 4: Keeping state with Vuex](/2017/10/vue.js-front-end-app-part-4-keeping-state-with-vuex/)
-  * [Part 5: Data presentation](/2018/01/vue.js-front-end-app-part-5-data-presentation/)
+  * [Part 1: Setting up the app](/blog/2017/09/vue.js-front-end-app-part-1-setting-up-the-app/)
+  * [Part 2: Design is (not) hard](/blog/2017/09/vue.js-front-end-app-part-2-design-is-not-hard/)
+  * [Part 3: Authentication](/blog/2017/09/vue.js-front-end-app-part-3-authentication/)
+  * [Part 4: Keeping state with Vuex](/blog/2017/10/vue.js-front-end-app-part-4-keeping-state-with-vuex/)
+  * [Part 5: Data presentation](/blog/2018/01/vue.js-front-end-app-part-5-data-presentation/)
   * Part 6: Deploying to S3
 </details>
 
@@ -48,13 +48,13 @@ I imagine a lot of you already know, but let's go over this bery briefly. The S3
 
 If we're assuming that our app will get very little traffic, it can be cost-effective to just do that, sure. What we're going to do here applies more to apps with moderate and higher traffic, because it helps us scale.
 
-Quite a long time ago, when I talked about [the "why" of namespacing APIs](/2017/07/rails-5.1-api-with-vue.js-frontend-part-3-api-versioning/), I dreamt up a scenario where our app gains traction rapidly. When that happens, you'll need to scale with demand for your services. If your app is one big clump of backend and frontend code that lives on a single machine, you suddenly have a whole lot of work to do separating the code so it can be scaled separately. But if your app was separated, then all the scaling work needs to be done just on the backend - no frontend fussing around required.
+Quite a long time ago, when I talked about [the "why" of namespacing APIs](/blog/2017/07/rails-5.1-api-with-vue.js-frontend-part-3-api-versioning/), I dreamt up a scenario where our app gains traction rapidly. When that happens, you'll need to scale with demand for your services. If your app is one big clump of backend and frontend code that lives on a single machine, you suddenly have a whole lot of work to do separating the code so it can be scaled separately. But if your app was separated, then all the scaling work needs to be done just on the backend - no frontend fussing around required.
 
 It also makes it cheaper to scale. Application servers - like the premade ones you get from Heroku, or ones you manage yourself on AWS EC2 or Microsoft Azure - cost much more than static file storage. We should have this pricier asset working full clip to serve _application_ requests. While it's serving requests for static files, the server is not fielding requests to the actual application backend, given that a server's CPU, RAM, network connection etc. are a finite resource.
 
 # How do I get an S3?
 
-First we need an AWS account. You'll want to go to https://portal.aws.amazon.com/billing/signup and set one up if you don't have one. 
+First we need an AWS account. You'll want to go to https://portal.aws.amazon.com/billing/signup and set one up if you don't have one.
 
 {{< figure src="/media/vue-deploy/amazon-signup.png" link="/media/vue-deploy/amazon-signup.png" >}}
 
@@ -230,7 +230,7 @@ Ta-daaa! 🤩
 
 # We're done!
 
-We went over a huge amount of topics relating to [Rails API apps](/2017/07/rails-5.1-api-with-vue.js-frontend-part-0-stack-choices/) and [Vue.js single page applications](/2017/09/vue.js-front-end-app-part-1-setting-up-the-app/). There are 12 articles in both series, spanning a whopping 10 months, which is probably the longest I've blogged about a single thing in my entire life - if you'd like a refresher, just hit the links in the previous sentences. As always, the changes done to the code in this article are available on [GitHub](https://github.com/paweljw/bookstore-frontend/commit/4fa6c42266c2bf6d10b7b6af68cfbd205f81295b).
+We went over a huge amount of topics relating to [Rails API apps](/blog/2017/07/rails-5.1-api-with-vue.js-frontend-part-0-stack-choices/) and [Vue.js single page applications](/blog/2017/09/vue.js-front-end-app-part-1-setting-up-the-app/). There are 12 articles in both series, spanning a whopping 10 months, which is probably the longest I've blogged about a single thing in my entire life - if you'd like a refresher, just hit the links in the previous sentences. As always, the changes done to the code in this article are available on [GitHub](https://github.com/paweljw/bookstore-frontend/commit/4fa6c42266c2bf6d10b7b6af68cfbd205f81295b).
 
 I'd like to thank you all for reading, commenting, and helping me learn. Be sure to check back in the future! I probably won't be starting another huge multi-article, multi-month journey anytime soon, but there'll be some interesting bits to tide you over until we embark on another one of those.
 

@@ -17,18 +17,18 @@ Last time we’ve seen each other, we’ve just deployed our Rails 5.1 API app. 
 
 <!--more-->
 
-_We'll be using a Rails API backend which we've made in a previous series of posts, [check it out](/2017/07/rails-5.1-api-with-vue.js-frontend-part-0-stack-choices/)!_
+_We'll be using a Rails API backend which we've made in a previous series of posts, [check it out](/blog/2017/07/rails-5.1-api-with-vue.js-frontend-part-0-stack-choices/)!_
 
 In this part we'll go over the basics: how to get everything related to Vue.js installed, how to set up our app, and how the different bits and pieces fit together. This might seem like starting a step lower than my Rails series - and it is, since I've done a lot with Rails previously but I'm just starting with Vue. If you're already a pro, this part might be safe to skip, and if you're just starting like me - we'll do it together!
 
 _In this series, the following articles have been posted:_
 
-  * [Part 1: Setting up the app](/2017/09/vue.js-front-end-app-part-1-setting-up-the-app/)
-  * [Part 2: Design is (not) hard](/2017/09/vue.js-front-end-app-part-2-design-is-not-hard/)
-  * [Part 3: Authentication](/2017/09/vue.js-front-end-app-part-3-authentication/)
-  * [Part 4: Keeping state with Vuex](/2017/10/vue.js-front-end-app-part-4-keeping-state-with-vuex/)
-  * [Part 5: Data presentation](/2018/01/vue.js-front-end-app-part-5-data-presentation/)
-  * [Part 6: Deploying to S3](/2018/04/vue.js-front-end-app-part-6-deploying-to-s3/)
+  * [Part 1: Setting up the app](/blog/2017/09/vue.js-front-end-app-part-1-setting-up-the-app/)
+  * [Part 2: Design is (not) hard](/blog/2017/09/vue.js-front-end-app-part-2-design-is-not-hard/)
+  * [Part 3: Authentication](/blog/2017/09/vue.js-front-end-app-part-3-authentication/)
+  * [Part 4: Keeping state with Vuex](/blog/2017/10/vue.js-front-end-app-part-4-keeping-state-with-vuex/)
+  * [Part 5: Data presentation](/blog/2018/01/vue.js-front-end-app-part-5-data-presentation/)
+  * [Part 6: Deploying to S3](/blog/2018/04/vue.js-front-end-app-part-6-deploying-to-s3/)
 
 ## But first: thanks!
 
@@ -384,7 +384,7 @@ the browser will show this _immediately after saving_ the file - no reloads ther
 
 ## What's next?
 
-When we were designing our Rails API app, we took a little bit of time before typing a single line of code to [think about the reality we were trying to model](https://paweljw.github.io/2017/07/rails-5.1-api-app-part-2-modeling-reality/) and how to express it in code. That's of course done now and we don't need to do this again for the front end, at least not to the same extent.
+When we were designing our Rails API app, we took a little bit of time before typing a single line of code to [think about the reality we were trying to model](https://paweljw.github.io/blog/2017/07/rails-5.1-api-app-part-2-modeling-reality/) and how to express it in code. That's of course done now and we don't need to do this again for the front end, at least not to the same extent.
 
 Remember the key things we learned about Vue, though:
 
@@ -399,7 +399,7 @@ In order to avoid wasting time later we'll throw together a quick mock-up of the
 
 As always, the code for this part is available on GitHub at [paweljw/bookstore-frontend](https://github.com/paweljw/bookstore-frontend/releases/tag/part-1).
 
-See you in [part 2](/2017/09/vue.js-front-end-app-part-2-design-is-not-hard/)!
+See you in [part 2](/blog/2017/09/vue.js-front-end-app-part-2-design-is-not-hard/)!
 
 ---
 
