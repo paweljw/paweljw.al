@@ -18,3 +18,5 @@ assetDir = "/themes/paweljw/assets"
   tag = "tags"
   category = "categories"
   archive = "archives"
+[markup.goldmark.renderer]
+unsafe= true
